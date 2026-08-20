@@ -12,6 +12,9 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
+    const isDesktop = window.matchMedia("(min-width: 641px)").matches;
+    if (!isDesktop) return;
+
     const onScroll = () => {
       if (mediaRef.current) {
         mediaRef.current.style.transform = `translateY(${window.scrollY * 0.25}px)`;
