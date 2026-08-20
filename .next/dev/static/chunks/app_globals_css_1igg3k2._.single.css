@@ -1,0 +1,134 @@
+/* [project]/app/globals.css [app-client] (css) */
+:root {
+  --pine: #16211b;
+  --pine-deep: #0e1712;
+  --porcelain: #f3ede6;
+  --porcelain-dim: #f3ede6b8;
+  --porcelain-faint: #f3ede673;
+  --ink: #1c1a16;
+  --ink-dim: #1c1a16ad;
+  --ink-faint: #1c1a1673;
+  --hairline: #1c1a161f;
+  --brass: #c9a879;
+  --brass-ink: #8a6a41;
+  --brass-strong: #dcb87f;
+  --moss: #7c9280;
+  --blush: #e3c2b5;
+  --line: #f3ede624;
+  --line-strong: #f3ede647;
+  --max: 1240px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--porcelain);
+  color: var(--ink);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img, video, svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display), serif;
+  letter-spacing: -.01em;
+  font-weight: 400;
+  line-height: 1.04;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.eyebrow {
+  font-family: var(--font-inter), sans-serif;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--brass-ink);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.btn {
+  letter-spacing: .01em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-inter), sans-serif;
+  border: none;
+  border-radius: 999px;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 28px;
+  transition: transform .25s, box-shadow .25s, background .25s, color .25s;
+  display: inline-flex;
+}
+
+.btn-brass {
+  background: var(--brass);
+  color: var(--pine-deep);
+}
+
+.btn-brass:hover {
+  background: var(--brass-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px #c9a87947;
+}
+
+.btn-outline {
+  color: var(--ink);
+  border: 1px solid var(--hairline);
+  background: none;
+}
+
+.btn-outline:hover {
+  border-color: var(--brass-ink);
+  color: var(--brass-ink);
+}
+
+section {
+  padding: 120px 0;
+}
+
+@media (max-width: 860px) {
+  .wrap {
+    padding: 0 22px;
+  }
+
+  section {
+    padding: 76px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition-duration: .001ms !important;
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/*# sourceMappingURL=app_globals_css_1igg3k2._.single.css.map*/

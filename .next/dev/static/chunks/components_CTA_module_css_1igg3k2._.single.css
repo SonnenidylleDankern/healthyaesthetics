@@ -1,0 +1,35 @@
+/* [project]/components/CTA.module.css [app-client] (css) */
+.CTA-module__n-fbaG__section {
+  padding-bottom: 60px;
+}
+
+.CTA-module__n-fbaG__box {
+  text-align: center;
+  border: 1px solid var(--hairline);
+  background: radial-gradient(circle at 30% 20%, #c9a8792e 0%, #c9a87900 55%), #1c1a1608;
+  border-radius: 28px;
+  padding: 90px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.CTA-module__n-fbaG__heading {
+  color: var(--ink);
+  margin: 18px 0;
+  font-size: clamp(32px, 4.6vw, 52px);
+}
+
+.CTA-module__n-fbaG__sub {
+  max-width: 480px;
+  color: var(--ink-dim);
+  margin: 0 auto 34px;
+}
+
+@media (max-width: 640px) {
+  .CTA-module__n-fbaG__box {
+    border-radius: 20px;
+    padding: 50px 26px;
+  }
+}
+
+/*# sourceMappingURL=components_CTA_module_css_1igg3k2._.single.css.map*/

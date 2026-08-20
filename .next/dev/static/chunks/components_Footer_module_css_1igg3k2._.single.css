@@ -1,0 +1,123 @@
+/* [project]/components/Footer.module.css [app-client] (css) */
+.Footer-module__EZoWya__footer {
+  background: var(--pine-deep);
+  padding: 70px 0 30px;
+}
+
+.Footer-module__EZoWya__grid {
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 24px;
+  padding-bottom: 44px;
+  display: flex;
+}
+
+.Footer-module__EZoWya__logo {
+  font-family: var(--font-display), serif;
+  color: var(--porcelain);
+  font-size: 24px;
+}
+
+.Footer-module__EZoWya__logo span {
+  color: var(--brass);
+  font-style: italic;
+}
+
+.Footer-module__EZoWya__cols {
+  gap: 70px;
+  font-size: 14px;
+  display: flex;
+}
+
+.Footer-module__EZoWya__cols div {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+.Footer-module__EZoWya__cols a {
+  color: var(--porcelain-dim);
+}
+
+.Footer-module__EZoWya__cols a:hover {
+  color: var(--brass);
+}
+
+.Footer-module__EZoWya__cols strong {
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 4px;
+  font-size: 11px;
+}
+
+.Footer-module__EZoWya__bottom {
+  color: var(--porcelain-faint);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12.5px;
+  display: flex;
+}
+
+@media (max-width: 860px) {
+  .Footer-module__EZoWya__grid {
+    flex-direction: column;
+  }
+}
+
+.Footer-module__EZoWya__logoImg {
+  width: auto;
+  height: 84px;
+}
+
+.Footer-module__EZoWya__cols a {
+  width: fit-content;
+  transition: color .3s, transform .25s;
+  position: relative;
+}
+
+.Footer-module__EZoWya__cols a:hover {
+  color: var(--brass);
+  transform: translateX(4px);
+}
+
+.Footer-module__EZoWya__instaLink {
+  color: var(--porcelain);
+  align-items: center;
+  display: inline-flex;
+}
+
+.Footer-module__EZoWya__instaLink:hover {
+  color: var(--brass);
+  transform: translateX(0);
+}
+
+.Footer-module__EZoWya__cols div {
+  gap: 14px;
+}
+
+@media (max-width: 640px) {
+  .Footer-module__EZoWya__bottom {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .Footer-module__EZoWya__footer {
+    padding-top: 40px;
+  }
+
+  .Footer-module__EZoWya__grid {
+    padding-bottom: 32px;
+  }
+
+  .Footer-module__EZoWya__logo {
+    margin-bottom: 8px;
+  }
+}
+
+/*# sourceMappingURL=components_Footer_module_css_1igg3k2._.single.css.map*/

@@ -1,0 +1,107 @@
+/* [project]/components/Packages.module.css [app-client] (css) */
+.Packages-module__FaRdYq__section {
+  background: var(--porcelain);
+}
+
+.Packages-module__FaRdYq__head {
+  max-width: 560px;
+  margin-bottom: 60px;
+}
+
+.Packages-module__FaRdYq__heading {
+  color: var(--ink);
+  margin-top: 16px;
+  font-size: clamp(32px, 4.4vw, 48px);
+}
+
+.Packages-module__FaRdYq__sub {
+  color: var(--ink-dim);
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.Packages-module__FaRdYq__grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  display: grid;
+}
+
+.Packages-module__FaRdYq__card {
+  border: 1px solid var(--hairline);
+  background: #1c1a1608;
+  border-radius: 24px;
+  padding: 42px;
+  position: relative;
+}
+
+.Packages-module__FaRdYq__featured {
+  border-color: var(--brass);
+}
+
+.Packages-module__FaRdYq__flag {
+  background: var(--brass);
+  color: var(--pine-deep);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  position: absolute;
+  top: -13px;
+  right: 30px;
+}
+
+.Packages-module__FaRdYq__card h3 {
+  color: var(--ink);
+  font-size: 27px;
+}
+
+.Packages-module__FaRdYq__price {
+  align-items: baseline;
+  gap: 12px;
+  margin: 20px 0 26px;
+  display: flex;
+}
+
+.Packages-module__FaRdYq__old {
+  color: var(--ink-faint);
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.Packages-module__FaRdYq__new {
+  font-family: var(--font-display), serif;
+  color: var(--brass-ink);
+  font-size: 42px;
+}
+
+.Packages-module__FaRdYq__list {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.Packages-module__FaRdYq__list li {
+  color: var(--ink-dim);
+  border-top: 1px solid var(--hairline);
+  padding: 11px 0;
+  font-size: 14px;
+}
+
+.Packages-module__FaRdYq__list li:first-child {
+  border-top: none;
+}
+
+@media (max-width: 860px) {
+  .Packages-module__FaRdYq__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .Packages-module__FaRdYq__card {
+    padding: 30px 26px;
+  }
+}
+
+/*# sourceMappingURL=components_Packages_module_css_1igg3k2._.single.css.map*/

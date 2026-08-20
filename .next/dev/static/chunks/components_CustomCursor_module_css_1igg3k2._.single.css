@@ -1,0 +1,36 @@
+/* [project]/components/CustomCursor.module.css [app-client] (css) */
+.CustomCursor-module__IN7vAW__dot {
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 999;
+  will-change: transform;
+  background: #fff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  margin-left: -7px;
+  transition: width .25s, height .25s, margin .25s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.CustomCursor-module__IN7vAW__dotLarge {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.CustomCursor-module__IN7vAW__hideCursor, .CustomCursor-module__IN7vAW__hideCursor * {
+  cursor: none !important;
+}
+
+@media (max-width: 859px) {
+  .CustomCursor-module__IN7vAW__dot {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=components_CustomCursor_module_css_1igg3k2._.single.css.map*/

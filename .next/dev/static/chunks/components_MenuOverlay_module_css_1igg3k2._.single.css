@@ -1,0 +1,127 @@
+/* [project]/components/MenuOverlay.module.css [app-client] (css) */
+.MenuOverlay-module__Zr32dG__overlay {
+  z-index: 150;
+  background: var(--pine-deep);
+  clip-path: circle(2% at calc(100% - 56px) 56px);
+  pointer-events: none;
+  transition: clip-path .7s cubic-bezier(.65, 0, .35, 1);
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+}
+
+.MenuOverlay-module__Zr32dG__overlayOpen {
+  clip-path: circle(150% at calc(100% - 56px) 56px);
+  pointer-events: auto;
+}
+
+.MenuOverlay-module__Zr32dG__inner {
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 120px clamp(24px, 8vw, 120px) 60px;
+  display: flex;
+}
+
+.MenuOverlay-module__Zr32dG__links {
+  flex-direction: column;
+  gap: 6px;
+  display: flex;
+}
+
+.MenuOverlay-module__Zr32dG__link {
+  border-bottom: 1px solid var(--line);
+  opacity: 0;
+  align-items: baseline;
+  gap: 22px;
+  padding: 16px 0;
+  transition: opacity .5s, transform .5s;
+  display: flex;
+  position: relative;
+  transform: translateY(24px);
+}
+
+.MenuOverlay-module__Zr32dG__overlayOpen .MenuOverlay-module__Zr32dG__link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.MenuOverlay-module__Zr32dG__overlayOpen .MenuOverlay-module__Zr32dG__links:hover .MenuOverlay-module__Zr32dG__link {
+  opacity: .38;
+}
+
+.MenuOverlay-module__Zr32dG__overlayOpen .MenuOverlay-module__Zr32dG__links .MenuOverlay-module__Zr32dG__link:hover {
+  opacity: 1;
+}
+
+.MenuOverlay-module__Zr32dG__link:after {
+  content: "";
+  background: var(--brass);
+  width: 0%;
+  height: 1px;
+  transition: width .55s cubic-bezier(.16, 1, .3, 1);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.MenuOverlay-module__Zr32dG__link:hover:after {
+  width: 100%;
+}
+
+.MenuOverlay-module__Zr32dG__linkIndex {
+  color: var(--brass);
+  letter-spacing: .08em;
+  font-size: 12px;
+  font-weight: 600;
+  transition: transform .5s cubic-bezier(.16, 1, .3, 1);
+}
+
+.MenuOverlay-module__Zr32dG__link:hover .MenuOverlay-module__Zr32dG__linkIndex {
+  transform: translateY(-4px);
+}
+
+.MenuOverlay-module__Zr32dG__linkLabel {
+  font-family: var(--font-display), serif;
+  color: var(--porcelain);
+  font-size: clamp(32px, 6vw, 62px);
+  transition: transform .55s cubic-bezier(.16, 1, .3, 1), color .4s;
+  display: inline-block;
+}
+
+.MenuOverlay-module__Zr32dG__link:hover .MenuOverlay-module__Zr32dG__linkLabel {
+  color: var(--brass);
+  transform: translateX(18px);
+}
+
+.MenuOverlay-module__Zr32dG__footer {
+  color: var(--porcelain-faint);
+  opacity: 0;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 48px;
+  font-size: 14px;
+  transition: opacity .6s .4s;
+  display: flex;
+}
+
+.MenuOverlay-module__Zr32dG__footer a {
+  color: var(--porcelain);
+  width: fit-content;
+  transition: color .3s;
+}
+
+.MenuOverlay-module__Zr32dG__footer a:hover {
+  color: var(--brass);
+}
+
+.MenuOverlay-module__Zr32dG__instaLink {
+  align-items: center;
+  display: inline-flex;
+}
+
+.MenuOverlay-module__Zr32dG__overlayOpen .MenuOverlay-module__Zr32dG__footer {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=components_MenuOverlay_module_css_1igg3k2._.single.css.map*/

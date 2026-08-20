@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/CTA.module.css"],"sourcesContent":[".section {\n  padding-bottom: 60px;\n}\n\n.box {\n  position: relative;\n  border-radius: 28px;\n  padding: 90px 50px;\n  text-align: center;\n  overflow: hidden;\n  background:\n    radial-gradient(circle at 30% 20%, rgba(201, 168, 121, 0.18) 0%, rgba(201, 168, 121, 0) 55%),\n    rgba(28, 26, 22, 0.03);\n  border: 1px solid var(--hairline);\n}\n\n.heading {\n  font-size: clamp(32px, 4.6vw, 52px);\n  color: var(--ink);\n  margin: 18px 0 18px;\n}\n\n.sub {\n  max-width: 480px;\n  margin: 0 auto 34px;\n  color: var(--ink-dim);\n}\n\n@media (max-width: 640px) {\n  .box {\n    padding: 50px 26px;\n    border-radius: 20px;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;;;;;AAYA;;;;;;AAMA;;;;;;AAMA;EACE"}}]
+}

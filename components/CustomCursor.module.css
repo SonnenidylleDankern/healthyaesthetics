@@ -1,0 +1,34 @@
+.dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: #ffffff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 999;
+  transition: width 0.25s ease, height 0.25s ease, margin 0.25s ease;
+  will-change: transform;
+}
+
+.dotLarge {
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.hideCursor,
+.hideCursor * {
+  cursor: none !important;
+}
+
+@media (max-width: 859px) {
+  .dot {
+    display: none;
+  }
+}
