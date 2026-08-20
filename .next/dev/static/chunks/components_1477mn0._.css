@@ -397,16 +397,17 @@
   }
 }
 
-.Hero-module__Z8hQ_W__content:before {
+.Hero-module__Z8hQ_W__hero:before {
   content: "";
-  z-index: -1;
-  background: radial-gradient(120% 100% at 0 100%, #f3ede6eb 0%, #f3ede6b3 50%, #f3ede600 100%);
-  border-radius: 32px;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, #f3ede66b 0%, #f3ede638 40%, #f3ede600 68%);
   position: absolute;
-  inset: -24px -28px;
+  inset: 0;
 }
 
 .Hero-module__Z8hQ_W__content {
+  z-index: 2;
   position: relative;
 }
 
