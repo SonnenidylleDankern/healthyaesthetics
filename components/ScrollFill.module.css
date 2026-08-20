@@ -1,5 +1,5 @@
 .wrap {
-  height: 160vh;
+  height: 280vh;
   position: relative;
 }
 
@@ -37,7 +37,7 @@
 
 @media (max-width: 640px) {
   .wrap {
-    height: 160vh;
+    height: 280vh;
   }
 }
 
