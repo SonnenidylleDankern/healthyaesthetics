@@ -2,7 +2,7 @@
 .MenuOverlay-module__Zr32dG__overlay {
   z-index: 150;
   background: var(--pine-deep);
-  clip-path: circle(2% at calc(100% - 56px) 56px);
+  clip-path: circle(0% at calc(100% - 56px) 56px);
   pointer-events: none;
   transition: clip-path .7s cubic-bezier(.65, 0, .35, 1);
   position: fixed;
