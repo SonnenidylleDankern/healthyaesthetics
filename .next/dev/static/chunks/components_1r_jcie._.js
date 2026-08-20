@@ -842,6 +842,12 @@ function SmoothAnchors() {
     _s();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "SmoothAnchors.useEffect": ()=>{
+            if ("scrollRestoration" in window.history) {
+                window.history.scrollRestoration = "manual";
+            }
+            if (window.location.hash) {
+                window.scrollTo(0, 0);
+            }
             const duration = 1100;
             const onClick = {
                 "SmoothAnchors.useEffect.onClick": (e)=>{
@@ -865,8 +871,6 @@ function SmoothAnchors() {
                             window.scrollTo(0, startY + distance * eased);
                             if (progress < 1) {
                                 requestAnimationFrame(step);
-                            } else {
-                                history.pushState(null, "", id);
                             }
                         }
                     }["SmoothAnchors.useEffect.onClick.step"];

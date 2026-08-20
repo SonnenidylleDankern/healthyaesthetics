@@ -8,6 +8,13 @@ function easeInOutCubic(t: number) {
 
 export default function SmoothAnchors() {
   useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    if (window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+
     const duration = 1100;
 
     const onClick = (e: MouseEvent) => {
@@ -35,8 +42,6 @@ export default function SmoothAnchors() {
         window.scrollTo(0, startY + distance * eased);
         if (progress < 1) {
           requestAnimationFrame(step);
-        } else {
-          history.pushState(null, "", id);
         }
       };
 
