@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Reveal.module.css"],"sourcesContent":[".reveal {\n  opacity: 0;\n  transform: translateY(28px);\n  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);\n  will-change: opacity, transform;\n}\n\n.visible {\n  opacity: 1;\n  transform: translateY(0);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .reveal {\n    transition: none;\n    opacity: 1;\n    transform: none;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;AAKA;EACE"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Reveal.module.css"],"sourcesContent":[".reveal {\n  opacity: 0;\n  transform: translateY(28px);\n  transition: opacity 1.5s cubic-bezier(0.16, 1, 0.3, 1), transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);\n  will-change: opacity, transform;\n}\n\n.visible {\n  opacity: 1;\n  transform: translateY(0);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .reveal {\n    transition: none;\n    opacity: 1;\n    transform: none;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;AAKA;EACE"}}]
 }

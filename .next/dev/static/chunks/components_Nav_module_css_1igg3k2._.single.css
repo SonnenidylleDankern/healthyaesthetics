@@ -80,21 +80,21 @@
 
 @media (max-width: 640px) {
   .Nav-module__e1xquq__nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .Nav-module__e1xquq__logoImg {
-    height: 62px;
+    height: 78px;
   }
 
   .Nav-module__e1xquq__burger {
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
   }
 
   .Nav-module__e1xquq__burger span {
-    width: 14px;
+    width: 16px;
   }
 }
 
